@@ -21,16 +21,22 @@ console.log(globalName);
 age = 4;
 var age;
 
-// 3. Constant
+// 3. Constant, r(read only)
+// use const whenever possible.
+// only use let if variable needs to change.
+const daysInWeek = 7;
+const maxNumber = 5;
+
+//Note!
+// Immutable data types: primitive types, frozen objects (i.e. object.freeze())
+//Mutable data types: all objects by default are mutable in JS
 // favor immutable data type always for a few reasons:
 // - security
 // - thread safety
 // - reduce human mistakes
 // 즉 JS에는 mutable type의 let immutable type의 const가 있음
-const daysInWeek = 7;
-const maxNumber = 5;
 
-// 4. Variable types
+// 4. Variable types, rw(read/write)
 // primitive, single item: number, string, boolean, null, undefined, symbol
 // object, box container
 // function, first-class function 
